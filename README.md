@@ -14,12 +14,14 @@ I finally decided to create a portfolio website to showcase my work and skills! 
 ```
 
 - **Frameworks**:
-  ```
+
+```
     React
     Tailwind
     Material UI
     Node.js
-  ```
+```
+
 - **Tools**:
 
 ```
@@ -30,8 +32,8 @@ I finally decided to create a portfolio website to showcase my work and skills! 
 
 ## Resources for this website (currently used or stopped using)
 
-# In use
+### In use
 
 - Bubbles animation: [https://codepen.io/diyorbek0309/pen/mdwbEve]
 
-# Not in use
+### Not in use
