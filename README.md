@@ -2,6 +2,12 @@
 
 I finally decided to create a portfolio website to showcase my work and skills! This will be a continuous project.
 
+## Tools for portfolio
+
+- React
+- Tailwind
+- React Router
+
 ## Tech Stack
 
 - **Languages**:
@@ -34,6 +40,6 @@ I finally decided to create a portfolio website to showcase my work and skills! 
 
 ### In use
 
-- Bubbles animation: [https://codepen.io/diyorbek0309/pen/mdwbEve]
+### Not in use anymore
 
-### Not in use
+- Bubbles animation: [https://codepen.io/diyorbek0309/pen/mdwbEve]

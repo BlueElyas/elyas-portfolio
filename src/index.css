@@ -1,0 +1,21 @@
+@font-face {
+  font-family: "Open Sans";
+  src: url(/src/assets/fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf)
+    format("truetype");
+}
+
+@font-face {
+  font-family: "Merriweather bold";
+  src: url(/src/assets/fonts/Merriweather/Merriweather-Black.ttf)
+    format("truetype");
+}
+
+@font-face {
+  font-family: "Merriweather regular";
+  src: url(/src/assets/fonts/Merriweather/Merriweather-Regular.ttf)
+    format("truetype");
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
