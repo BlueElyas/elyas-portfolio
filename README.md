@@ -35,11 +35,3 @@ I finally decided to create a portfolio website to showcase my work and skills! 
     Netlify
     Git
 ```
-
-## Resources for this website (currently used or stopped using)
-
-### In use
-
-### Not in use anymore
-
-- Bubbles animation: [https://codepen.io/diyorbek0309/pen/mdwbEve]
