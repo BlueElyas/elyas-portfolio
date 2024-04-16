@@ -40,6 +40,8 @@ I finally decided to create a portfolio website to showcase my work and skills! 
 
 ### In use
 
+- Hamburger Menu Icon [https://tailwindcomponents.com/component/animated-hamburger-menu-icon]
+
 ### Not in use anymore
 
 - Bubbles animation: [https://codepen.io/diyorbek0309/pen/mdwbEve]
