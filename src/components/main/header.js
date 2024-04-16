@@ -16,7 +16,11 @@ const Header = () => {
           <NavBar toggleNavbar={setShowNav} isActive={showNav} />
         </div>
       </header>
-      {showNav && <NavBar toggleNavbar={setShowNav} isActive={showNav} />}
+      {showNav && (
+        <div className="md:hidden">
+          <NavBar toggleNavbar={setShowNav} isActive={showNav} />
+        </div>
+      )}
     </>
   );
 };
