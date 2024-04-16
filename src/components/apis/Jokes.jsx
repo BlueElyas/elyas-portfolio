@@ -26,9 +26,11 @@ const Jokes = () => {
   console.log(jokes);
 
   return (
-    <div className="text-center  text-shadow w-[40%] mx-auto rounded-lg bg-cyan-700 bg-opacity-55 text-softGray flex-col gap-5 flex p-4 my-5">
+    <div className="text-center text-shadow lg:w-[40%] mx-4 lg:mx-auto rounded-lg bg-cyan-700 bg-opacity-55 text-softGray flex-col gap-5 flex p-4 my-5">
       <div>
-        <p className="text-3xl font-merriweatherReg">{jokes.setup}</p>
+        <p className=" text-xl lg:text-3xl font-merriweatherReg">
+          {jokes.setup}
+        </p>
       </div>
       <div>
         <div className="flex justify-center scale-[200%] cursor-pointer hover:opacity-85 hover:text-red-800 active:opacity-30 text-2xl text-accent">
@@ -37,7 +39,13 @@ const Jokes = () => {
               setShowPunchline(!showPunchline);
             }}
           >
-            {showPunchline ? <GoArrowUp /> : <GoArrowDown />}
+            {showPunchline ? (
+              <GoArrowUp />
+            ) : (
+              <>
+                <GoArrowDown />
+              </>
+            )}
           </button>
         </div>
       </div>
