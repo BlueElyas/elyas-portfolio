@@ -1,6 +1,7 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import AppShell from "./components/shells/appshell";
-import Api from "./pages/Api";
+import Apis from "./pages/Apis";
+import Home from "./pages/Home";
 
 function App() {
   const router = createBrowserRouter([
@@ -9,8 +10,12 @@ function App() {
       element: <AppShell />,
       children: [
         {
+          path: "/",
+          element: <Home />,
+        },
+        {
           path: "apis",
-          element: <Api />,
+          element: <Apis />,
         },
       ],
     },
