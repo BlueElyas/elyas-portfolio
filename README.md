@@ -34,7 +34,6 @@ I finally decided to create a portfolio website to showcase my work and skills! 
     Figma
     Netlify
     Git
-<<<<<<< HEAD
 ```
 
 ## Resources for this website (currently used or stopped using)
@@ -48,4 +47,3 @@ I finally decided to create a portfolio website to showcase my work and skills! 
 - Bubbles animation: [https://codepen.io/diyorbek0309/pen/mdwbEve]
 =======
 ```
->>>>>>> 1007973e90aa6bca91c0772c7c2a5316bf520a61
