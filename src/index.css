@@ -17,5 +17,11 @@
 }
 
 @tailwind base;
+
+@layer base {
+  html {
+    @apply text-primaryText;
+  }
+}
 @tailwind components;
 @tailwind utilities;
