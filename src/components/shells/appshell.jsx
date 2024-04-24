@@ -5,11 +5,13 @@ import { Outlet } from "react-router-dom";
 
 const AppShell = () => {
   return (
-    <>
+    <React.Fragment>
       <Header />
-      <Outlet />
+      <main main className="flex flex-col items-center">
+        <Outlet />
+      </main>
       <Footer />
-    </>
+    </React.Fragment>
   );
 };
 

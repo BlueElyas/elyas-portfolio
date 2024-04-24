@@ -2,6 +2,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import AppShell from "./components/shells/appshell";
 import Apis from "./pages/Apis";
 import Home from "./pages/Home";
+import Projects from "./pages/Projects";
 
 function App() {
   const router = createBrowserRouter([
@@ -16,6 +17,10 @@ function App() {
         {
           path: "apis",
           element: <Apis />,
+        },
+        {
+          path: "projects",
+          element: <Projects />,
         },
       ],
     },
