@@ -7,9 +7,7 @@ const AppShell = () => {
   return (
     <React.Fragment>
       <Header />
-      <main main className="flex flex-col items-center">
-        <Outlet />
-      </main>
+      <Outlet />
       <Footer />
     </React.Fragment>
   );

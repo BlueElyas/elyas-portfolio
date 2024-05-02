@@ -22,7 +22,7 @@ const Jokes = () => {
   }, [newJoke]);
 
   return (
-    <div className="text-center text-shadow  mx-4 md:w-[600wpx] lg:w-[70%] md:text-2xl lg:text-3xl text-darkGray flex-col gap-5 flex p-6 my-5 border-solid border-darkGray border-2 rounded-2xl border-opacity-30 ">
+    <div className="text-center text-shadow  mx-4  md:text-2xl lg:text-3xl text-darkGray flex-col gap-5 flex p-6 my-5 border-solid border-darkGray border-2 rounded-2xl border-opacity-30 ">
       <div className="flex flex-col gap-10">
         <div>
           <p className="text-lg lg:text-xl font-merriweatherReg">

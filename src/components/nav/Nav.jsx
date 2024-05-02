@@ -18,13 +18,22 @@ const NavBar = ({ toggleNavbar, isActive }) => {
   return (
     <>
       <nav>
-        <ul className="flex gap-1font-merriweatherReg flex-col place-items-center bg-softGray flex-wrap md:flex-row fixed w-screen border-solid border-2 border-darkGray border-opacity-10 rounded-b-full md:static md:w-full md:border-none">
+        <ul className="flex gap-1font-merriweatherReg flex-col place-items-center bg-softGray pb-8 flex-wrap md:flex-row fixed w-screen border-solid border-2 border-darkGray border-opacity-10 rounded-b-full md:static md:w-full md:border-none">
           <li className={linkStyles.join(" ")}>
             <NavLink to="/" className="flex items-center gap-4">
               <div className="md:hidden">
                 <FaArrowAltCircleRight />
               </div>
               <button onClick={() => toggleNavbar(!isActive)}>Home</button>
+            </NavLink>
+          </li>
+          <li className={linkStyles.join(" ")}>
+            <NavLink to="albums" className="flex items-center gap-4">
+              <div className="md:hidden">
+                <FaArrowAltCircleRight />
+              </div>
+
+              <button onClick={() => toggleNavbar(!isActive)}>Albums</button>
             </NavLink>
           </li>
           <li className={linkStyles.join(" ")}>

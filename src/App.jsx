@@ -3,6 +3,7 @@ import AppShell from "./components/shells/appshell";
 import Apis from "./pages/Apis";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
+import AlbumPage from "./pages/AlbumPage";
 
 function App() {
   const router = createBrowserRouter([
@@ -13,6 +14,10 @@ function App() {
         {
           path: "/",
           element: <Home />,
+        },
+        {
+          path: "albums",
+          element: <AlbumPage />,
         },
         {
           path: "apis",
