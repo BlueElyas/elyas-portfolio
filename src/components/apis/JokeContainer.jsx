@@ -1,10 +1,10 @@
 import React from "react";
 
-const ApiContainer = ({ children, name, link, description }) => {
+const JokeContainer = ({ children, name, link, description }) => {
   console.log(name);
   return (
     <section>
-      <div className="mx-2 flex flex-col items-center">
+      <div className="mx-2 flex flex-col items-center lg:border-2 lg:border-solid lg:border-darkGray lg:rounded-lg lg:p-4 lg:bg-softGray lg:w-[750px] lg:mx-auto lg:border-opacity-30">
         {children}
         <ul className="w-[90%] leading-8 flex flex-col gap-8 md:text-center">
           <li className="font-bold">
@@ -34,4 +34,4 @@ const ApiContainer = ({ children, name, link, description }) => {
   );
 };
 
-export default ApiContainer;
+export default JokeContainer;
