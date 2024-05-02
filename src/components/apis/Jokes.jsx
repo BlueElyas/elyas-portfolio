@@ -22,10 +22,11 @@ const Jokes = () => {
   }, [newJoke]);
 
   return (
-    <div className="text-center text-shadow  mx-4  md:text-2xl lg:text-3xl text-darkGray flex-col gap-5 flex p-6 my-5 border-solid border-darkGray border-2 rounded-2xl border-opacity-30 ">
+    <div className="text-center text-shadow mx-[32px] md:text-2xl lg:text-3xl text-darkGray flex-col gap-5 flex p-6 my-5 border-solid border-darkGray border-2 rounded-2xl border-opacity-30 w-full lg:w-[750px] lg:border-none">
+      <hr />
       <div className="flex flex-col gap-10">
         <div>
-          <p className="text-lg lg:text-xl font-merriweatherReg">
+          <p className="text-lg font-merriweatherReg lg:text-2xl">
             {jokes.setup}
           </p>
         </div>
@@ -37,11 +38,11 @@ const Jokes = () => {
               }}
             >
               {showPunchline ? (
-                <button className="flex justify-center flex-col items-center gap-1 border-accent border-solid px-2 my-4 border-2 text-[10px] rounded-lg">
+                <button className="flex justify-center flex-col items-center gap-1 border-accent border-solid px-2 my-4 border-2 text-[10px] rounded-lg tracking-widest font-bold ">
                   Hide Punchline
                 </button>
               ) : (
-                <button className="flex justify-center flex-col items-center gap-1 border-accent border-solid px-2 my-4 text-[10px] border-2  rounded-lg">
+                <button className="flex justify-center flex-col items-center gap-1 border-accent border-solid px-2 my-4 text-[10px] border-2  rounded-lg tracking-widest font-bold ">
                   Show Punchline
                 </button>
               )}
@@ -68,6 +69,7 @@ const Jokes = () => {
           New Joke!
         </button>
       </div>
+      <hr />
     </div>
   );
 };

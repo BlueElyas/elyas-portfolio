@@ -23,4 +23,20 @@ export const albums = [
     dateListened: "31 October 2017",
     link: "https://open.spotify.com/album/0MV1yCXcNNQBfwApqAVkH0?si=oHdWmAzBRSe-W_tO1Q-31w",
   },
+  {
+    title: "This Is Why",
+    artist: "Paramore",
+    img: "https://upload.wikimedia.org/wikipedia/en/d/d3/Paramore_-_This_Is_Why.png",
+    rating: 9,
+    dateListened: "29 April 2024",
+    link: "https://open.spotify.com/album/6tG8sCK4htJOLjlWwb7gZB?si=ULJoldlmTWKHmnt-1c25RQ",
+  },
+  {
+    title: "Sombras",
+    artist: "Javier Solis",
+    img: "https://m.media-amazon.com/images/I/71iqJpIEP3L._UF1000,1000_QL80_.jpg",
+    rating: "Very nice",
+    dateListened: "01 May 2024",
+    link: "https://open.spotify.com/album/38BNQJvYJ4KPOmAT9dEq9B?si=HtTn0yj_TQq094aqQ0hZcw",
+  },
 ];

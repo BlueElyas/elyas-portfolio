@@ -1,20 +1,17 @@
 import React from "react";
 
-const ApiContainer = ({ children, name, link, description, apiIdx }) => {
+const ApiContainer = ({ children, name, link, description }) => {
   console.log(name);
   return (
     <section>
       <div className="mx-2 flex flex-col items-center">
-        <h2 className="font-merriweatherReg text-xl tracking-widest">
-          API Number: {apiIdx}
-        </h2>
         {children}
-        <ul className="my-0 flex flex-col gap-3 border-solid border-2 border-darkGray  rounded-lg mx-4 mt-12 md:mt-0 border-opacity-20 p-4">
+        <ul className="w-[90%] leading-8 flex flex-col gap-8 md:text-center">
           <li className="font-bold">
-            Name:{" "}
+            Name:
             <span className="font-sans text-lg ml-4 font-normal">{name}</span>
           </li>
-          <li className="font-bold">
+          <li className="font-bold break-all break-words">
             Link:
             <span className="font-sans text-lg ml-4 font-normal">
               <a

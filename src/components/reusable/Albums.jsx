@@ -4,17 +4,23 @@ const Albums = ({ title, artist, img, rating, dateListened, link }) => {
   const artistName = typeof artist === "string" ? artist : artist.join(", ");
 
   return (
-    <div className=" box-border flex flex-col items-center my-5 border-2 border-solid border-darkGray rounded-3xl p-6 border-opacity-55 w-[80%] mx-4 lg:w-[750px]">
-      <div className="flex flex-col md:flex-row items-center w-full justify-around">
-        <div className=" text-start w-[50%]">
-          <p className="font-merriweatherReg">Artist/s:</p>
-          <h1 className="mt-1 mb-4 font-merriweatherBold text-2xl">
-            {artistName}
-          </h1>
+    <div className=" box-border flex flex-col items-center my-5 border-2 border-solid border-darkGray rounded-3xl p-6 border-opacity-55 w-[90%] mx-4 lg:w-[750px]">
+      <div className="flex flex-col md:flex-row items-center w-full justify-around lg:gap-5">
+        <div className="flex justify-between lg:flex-col">
+          <div className="w-[40%] lg:w-full">
+            <p className="font-merriweatherReg">Artist/s:</p>
+            <h1 className="mt-1 mb-4 font-merriweatherBold text-2xl">
+              {artistName}
+            </h1>
+          </div>
           <br />
           <br />
-          <p className="font-merriweatherReg">Album name:</p>{" "}
-          <h2 className=" mt-1 mb-4 font-merriweatherBold text-xl">{title}</h2>
+          <div className="w-[40%] lg:w-full">
+            <p className="font-merriweatherReg">Album name:</p>{" "}
+            <h2 className=" mt-1 mb-4 font-merriweatherBold text-xl">
+              {title}
+            </h2>
+          </div>
         </div>
         <img
           src={img}

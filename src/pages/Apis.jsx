@@ -13,7 +13,6 @@ const Apis = () => {
           link="https://github.com/15Dkatz/official_joke_api?tab=readme-ov-file"
           description="An API thats easy to use to generate jokes. Documentation found in
               their github."
-          apiIdx={1}
         >
           <Jokes />
         </ApiContainer>
