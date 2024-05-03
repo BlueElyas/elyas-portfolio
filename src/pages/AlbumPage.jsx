@@ -1,5 +1,4 @@
 import React from "react";
-import Albums from "../components/reusable/Albums";
 import { albums } from "../albums";
 import PageTitle from "../components/reusable/PageTitle";
 import AlbumCard from "../components/reusable/AlbumCard";
