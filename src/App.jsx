@@ -1,4 +1,4 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, RouterProvider, route } from "react-router-dom";
 import AppShell from "./components/shells/appshell";
 import Apis from "./pages/Apis";
 import Home from "./pages/Home";
@@ -16,16 +16,20 @@ function App() {
           element: <Home />,
         },
         {
+          path: "projects",
+          element: <Projects />,
+        },
+        {
+          path: "professional",
+          element: <div className=""></div>,
+        },
+        {
           path: "albums",
           element: <AlbumPage />,
         },
         {
           path: "apis",
           element: <Apis />,
-        },
-        {
-          path: "projects",
-          element: <Projects />,
         },
       ],
     },

@@ -1,11 +1,11 @@
 import React from "react";
 
-const Albums = ({ title, artist, img, rating, dateListened, link }) => {
+const Albums = ({ title, artist, img, link, dateReleased }) => {
   const artistName = typeof artist === "string" ? artist : artist.join(", ");
 
   return (
     <div className=" box-border flex flex-col items-center my-5 border-2 border-solid border-darkGray rounded-3xl p-6 border-opacity-55 w-[90%] mx-4 lg:w-[750px]">
-      <div className="flex flex-col md:flex-row items-center w-full justify-around lg:gap-5">
+      <div className="flex flex-col md:flex-row items-center w-full justify-around lg:gap-5+-">
         <div className="flex justify-between lg:flex-col">
           <div className="w-[40%] lg:w-full">
             <p className="font-merriweatherReg">Artist/s:</p>
@@ -30,18 +30,7 @@ const Albums = ({ title, artist, img, rating, dateListened, link }) => {
       </div>
       <br />
       <hr className=" w-full opacity-50 border-darkGray" />
-      <div className="my-7 leading-10 font-merriweatherReg text-xl flex gap-8 justify-around">
-        <p className="w-[50%]">
-          My rating:
-          <br />
-          <span className="text-accent text-lg">{rating}/10</span>
-        </p>
-        <p>
-          Date listened:
-          <br />
-          <span className="text-accent text-lg">{dateListened}</span>
-        </p>
-      </div>
+      <br />
       <button className="bg-accent py-4 px-8 text-xl text-softGray rounded-xl font-bold tracking-wider hover:opacity-70 active:opacity-90">
         <a
           href={link}

@@ -64,7 +64,10 @@ const Jokes = () => {
         </p>
         <button
           className="bg-accent p-3 rounded-lg w-32 mx-auto hover:scale-110 active:opacity-50 font-merriweatherReg text-softGray text-lg"
-          onClick={() => setNewJoke(!newJoke)}
+          onClick={() => {
+            setNewJoke(!newJoke);
+            setShowPunchline(!showPunchline);
+          }}
         >
           New Joke!
         </button>

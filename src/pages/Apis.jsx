@@ -6,6 +6,7 @@ import PageTitle from "../components/reusable/PageTitle";
 const Apis = () => {
   return (
     <>
+      ``
       <PageTitle title="Fun with Apis!" />
       <>
         <JokeContainer
