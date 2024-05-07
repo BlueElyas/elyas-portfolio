@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <>
       <PageTitle title="Welcome to my portfolio" />
-      <main className="flex flex-col md:flex-row md:gap-16 items-center lg:w-[80%] lg:mx-auto">
+      <main className="flex flex-col gap-8 items-center lg:grid lg:grid-cols-2 lg:w-[70%] lg:mx-auto lg:items-stretch lg:grid-flow-row">
         <VisitPage
           title="Visit my Projects"
           description="Projects and Client work"
@@ -15,9 +15,15 @@ const Home = () => {
         />
         <VisitPage
           title="Check out my use of APIs!"
-          name="apis"
+          name="experiments/apis"
           startOrEnd="left"
           description="Info and links of each API used are included."
+        />
+        <VisitPage
+          title="Check out some albums I listen to"
+          name="experiments/albums"
+          startOrEnd="right"
+          description="Just some albums I listen to!"
         />
       </main>
     </>

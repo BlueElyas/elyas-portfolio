@@ -17,6 +17,7 @@ const AlbumPage = () => {
               img={data.img}
               dateReleased={data.dateReleased}
               link={data.link}
+              key={data.title}
             />
           );
         })}

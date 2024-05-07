@@ -4,6 +4,7 @@ import Apis from "./pages/Apis";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import AlbumPage from "./pages/AlbumPage";
+import ExperimentShell from "./components/shells/ExperimentShell";
 
 function App() {
   const router = createBrowserRouter([
@@ -20,16 +21,18 @@ function App() {
           element: <Projects />,
         },
         {
-          path: "professional",
-          element: <div className=""></div>,
-        },
-        {
-          path: "albums",
-          element: <AlbumPage />,
-        },
-        {
-          path: "apis",
-          element: <Apis />,
+          path: "experiments",
+          element: <ExperimentShell />,
+          children: [
+            {
+              path: "albums",
+              element: <AlbumPage />,
+            },
+            {
+              path: "apis",
+              element: <Apis />,
+            },
+          ],
         },
       ],
     },

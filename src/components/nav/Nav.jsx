@@ -34,12 +34,15 @@ const NavBar = ({ toggleNavbar, isActive }) => {
               setShowExperiment(true);
             }}
           >
-            Experiments
+            <NavLink to="experiments">Experiments</NavLink>
           </li>
           {showExperiment ? (
             <div className="flex gap-4">
               <li className={subLinkStyles.join(" ")}>
-                <NavLink to="apis" className="flex items-center gap-4">
+                <NavLink
+                  to="experiments/apis"
+                  className="flex items-center gap-4"
+                >
                   <div className="md:hidden">
                     <FaArrowAltCircleRight />
                   </div>
@@ -47,7 +50,10 @@ const NavBar = ({ toggleNavbar, isActive }) => {
                 </NavLink>
               </li>
               <li className={subLinkStyles.join(" ")}>
-                <NavLink to="albums" className="flex items-center gap-4">
+                <NavLink
+                  to="experiments/albums"
+                  className="flex items-center gap-4"
+                >
                   <div className="md:hidden">
                     <FaArrowAltCircleRight />
                   </div>

@@ -22,11 +22,10 @@ const Jokes = () => {
   }, [newJoke]);
 
   return (
-    <div className="text-center text-shadow mx-[32px] md:text-2xl lg:text-3xl text-darkGray flex-col gap-5 flex p-6 my-5 border-solid border-darkGray border-2 rounded-2xl border-opacity-30 w-full lg:w-[750px] lg:border-none">
-      <hr />
+    <div className="text-center mx-[32px]text-darkGray flex-col gap-5 flex p-6 mb-5 border-solid border-darkGray border-2 rounded-2xl border-opacity-30 w-full lg:w-[500px] ">
       <div className="flex flex-col gap-10">
         <div>
-          <p className="text-lg font-merriweatherReg lg:text-2xl">
+          <p className="text-lg font-merriweatherReg lg:text-xl">
             {jokes.setup}
           </p>
         </div>
@@ -57,7 +56,6 @@ const Jokes = () => {
           )}
         </div>
       </div>
-      <hr />
       <div className="flex flex-col gap-5 mt-4">
         <p className="font-merriweatherReg text-lg">
           Click here for a new joke?
@@ -72,7 +70,6 @@ const Jokes = () => {
           New Joke!
         </button>
       </div>
-      <hr />
     </div>
   );
 };
