@@ -37,7 +37,7 @@ const NavBar = ({ toggleNavbar, isActive }) => {
             <NavLink to="experiments">Experiments</NavLink>
           </li>
           {showExperiment ? (
-            <div className="flex gap-4 absolute top-[250px]  md:top-auto md:mt-20 ml-40">
+            <div className="flex gap-4 absolute top-[250px]  md:top-auto md:mt-20 md:ml-40">
               <li className={subLinkStyles.join(" ")}>
                 <NavLink
                   to="experiments/apis"
