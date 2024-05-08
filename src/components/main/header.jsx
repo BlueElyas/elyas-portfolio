@@ -8,7 +8,7 @@ const Header = () => {
 
   return (
     <>
-      <header className="flex justify-around py-8 items-center bg-softGray md:items-baseline">
+      <header className="flex justify-around py-10 items-center bg-softGray md:items-baseline">
         <h1 className="font-merriweatherBold text-4xl">
           <NavLink to="/">Elyas F</NavLink>
         </h1>

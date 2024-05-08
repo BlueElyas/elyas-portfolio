@@ -25,12 +25,13 @@ function App() {
           element: <ExperimentShell />,
           children: [
             {
-              path: "albums",
-              element: <AlbumPage />,
-            },
-            {
               path: "apis",
               element: <Apis />,
+              index: true,
+            },
+            {
+              path: "albums",
+              element: <AlbumPage />,
             },
           ],
         },

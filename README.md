@@ -46,3 +46,5 @@ I finally decided to create a portfolio website to showcase my work and skills! 
 ### Not in use anymore
 
 - Bubbles animation: [https://codepen.io/diyorbek0309/pen/mdwbEve]
+
+## Using React Hooks

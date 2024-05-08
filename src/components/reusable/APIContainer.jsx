@@ -1,7 +1,6 @@
 import React from "react";
 
 const APIContainer = ({ children, name, link, description }) => {
-  console.log(name);
   return (
     <section>
       <div className="mx-2 flex flex-col items-center lg:w-[700px] lg:mx-auto lg:border-opacity-30">
