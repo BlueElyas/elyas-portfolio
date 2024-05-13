@@ -20,12 +20,12 @@ const ProjectCard = ({ name, tools, description, website, github }) => {
           <span className="font-merriweatherReg block mb-2">{description}</span>
         </li>
         <li className="text-accent hover:opacity-70 underline hover:no-underline ">
-          <a href={website} target="_blank">
+          <a href={website} target="_blank" rel="noreferrer">
             Website
           </a>
         </li>
         <li className="text-accent hover:opacity-70 underline hover:no-underline ">
-          <a href={github} target="_blank">
+          <a href={github} target="_blank" rel="noreferrer">
             Github
           </a>
         </li>
