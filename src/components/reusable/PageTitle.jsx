@@ -19,7 +19,7 @@ const PageTitle = ({ title }) => {
     );
 
   return (
-    <div className="pt-6 pb-10 w-screen text-center font-merriweatherBold px-8 my-4 leading-8 grid grid-cols-4">
+    <div className="pt-6 pb-10 text-center font-merriweatherBold px-8 my-4 leading-8 grid grid-cols-4">
       {showBackToHome}
       <h1 className="text-3xl mr-12 mt-6 col-span-4"> {title} </h1>
     </div>
