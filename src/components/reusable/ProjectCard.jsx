@@ -10,20 +10,24 @@ const ProjectCard = ({ name, tools, description, website, github }) => {
           Name: <span className="font-merriweatherReg block mb-2">{name}</span>
         </li>
         <li>
-          Tools:{" "}
+          Tools:
           <span className="font-merriweatherReg block mb-2">
             {tools.join(", ")}
           </span>
         </li>
         <li>
-          Desc:{" "}
+          Desc:
           <span className="font-merriweatherReg block mb-2">{description}</span>
         </li>
         <li className="text-accent hover:opacity-70 underline hover:no-underline ">
-          <a href={website}> Website </a>
+          <a href={website} target="_blank">
+            Website
+          </a>
         </li>
         <li className="text-accent hover:opacity-70 underline hover:no-underline ">
-          <a href={github}> Github</a>
+          <a href={github} target="_blank">
+            Github
+          </a>
         </li>
       </ul>
     </div>
