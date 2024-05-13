@@ -24,6 +24,22 @@ const projects = [
     website: "https://technative-academy.github.io/Dream-Generator/",
     github: "https://github.com/BlueElyas/Dream-Generator",
   },
+  {
+    name: "Country Search using RESTful API",
+    tools: [
+      "React",
+      "Javascript",
+      "Tailwind",
+      "Git",
+      "Github",
+      "Vite",
+      "Font Awesome",
+    ],
+    github: "https://github.com/BlueElyas/country-search-restful-api",
+    website: "https://loquacious-pithivier-fa024f.netlify.app/",
+    description:
+      "React project creating a country search and filter with country card displaying full data when clicked. It is an advanced front-end mentor challenge.",
+  },
 ];
 
 export default projects;
