@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 const ProjectCard = ({ name, tools, description, website, github }) => {
   return (
