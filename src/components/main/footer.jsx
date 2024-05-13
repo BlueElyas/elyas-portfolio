@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="bg-softGray text-center font-merriweatherReg py-6  mt-[300px] bottom-0 ">
+    <footer className="bg-softGray text-center font-merriweatherReg py-6 mt-64  ">
       <p> &copy; Elyas F. 2024</p>
     </footer>
   );
