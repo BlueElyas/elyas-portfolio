@@ -24,7 +24,7 @@ const Projects = () => {
             Visit my github here!
           </a>
         </div>
-        <div className="flex justify-center mt-8 gap-24">
+        <div className="flex flex-col md:flex-row md:flex-wrap justify-center mt-8 gap-24">
           {projects.map((project) => {
             return (
               <ProjectCard
