@@ -4,7 +4,6 @@ import { Outlet } from "react-router-dom";
 const ExperimentShell = () => {
   return (
     <div>
-      {/* Navigation */}
       <Outlet />
     </div>
   );

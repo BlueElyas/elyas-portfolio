@@ -3,7 +3,7 @@ import React from "react";
 const APIContainer = ({ children, name, link, description }) => {
   return (
     <section>
-      <div className="mx-2 flex flex-col items-center lg:w-[700px] lg:mx-auto lg:border-opacity-30">
+      <div className="mx-2 flex flex-col items-center lg:w-[700px] lg:mx-auto">
         {children}
         <ul className="w-[90%] leading-4 flex flex-col gap-8 md:text-center">
           <li className="font-bold">

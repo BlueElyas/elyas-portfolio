@@ -1,5 +1,7 @@
 import React from "react";
 import PageTitle from "../components/reusable/PageTitle";
+import projects from "../projects";
+import ProjectCard from "../components/reusable/ProjectCard";
 
 const Projects = () => {
   return (
@@ -21,6 +23,19 @@ const Projects = () => {
           >
             Visit my github here!
           </a>
+        </div>
+        <div className="flex justify-center mt-8 gap-24">
+          {projects.map((project) => {
+            return (
+              <ProjectCard
+                name={project.name}
+                tools={project.tools}
+                description={project.description}
+                website={project.website}
+                github={project.github}
+              />
+            );
+          })}
         </div>
       </div>
     </div>
