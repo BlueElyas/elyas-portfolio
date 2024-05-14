@@ -1,5 +1,13 @@
 const projects = [
   {
+    name: "Saya Gems",
+    tools: ["Shopify", "HTML", "CSS", "Figma"],
+    github: "",
+    website: "",
+    description:
+      "Client project to develop a Jewellery eCommerce website. Lead a team to develop the website, products, marketing, sales, design, and analsysis for client.",
+  },
+  {
     name: "Audiophile Website",
     tools: [
       "React",
@@ -39,14 +47,6 @@ const projects = [
     website: "https://loquacious-pithivier-fa024f.netlify.app/",
     description:
       "React project creating a country search and filter with country card displaying full data when clicked. It is an advanced front-end mentor challenge.",
-  },
-  {
-    name: "Saya Gems",
-    tools: ["Shopify", "HTML", "CSS", "Figma"],
-    github: "",
-    website: "",
-    description:
-      "Client project to develop a Jewellery eCommerce website. Lead a team to develop the website, products, marketing, sales, design, and analsysis for client.",
   },
 ];
 
