@@ -5,7 +5,7 @@ import AlbumCard from "../components/reusable/AlbumCard";
 
 const AlbumPage = () => {
   return (
-    <main className="flex flex-col items-center">
+    <main className="flex flex-col ">
       <PageTitle title="Random albums that I have listened to" />
 
       <div className="flex flex-wrap items-center justify-center gap-24">

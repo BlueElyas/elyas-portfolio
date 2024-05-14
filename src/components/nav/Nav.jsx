@@ -10,7 +10,7 @@ const NavBar = ({ toggleNavbar, isActive }) => {
   return (
     <>
       <nav onMouseLeave={(e) => setShowExperiment(!showExperiment)}>
-        <ul className="flex gap-1font-merriweatherReg flex-col place-items-center bg-softGray pb-8 flex-wrap md:flex-row  w-screen border-solid border-2 border-darkGray border-opacity-10 rounded-b-full gap-4 md:border-none md:w-[300px]">
+        <ul className="flex gap-1font-merriweatherReg flex-col place-items-center bg-softGray pb-16 md:pb-8 flex-wrap md:flex-row  w-screen border-solid border-2 border-darkGray border-opacity-10 rounded-b-full gap-4 md:border-none md:w-[300px]">
           <li className={linkStyles.join(" ")}>
             <NavLink to="/" className="flex items-center gap-4">
               <div className="md:hidden">
