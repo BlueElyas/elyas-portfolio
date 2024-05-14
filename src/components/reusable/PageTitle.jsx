@@ -1,21 +1,26 @@
 import React from "react";
-import { NavLink, useLocation } from "react-router-dom";
+import { NavLink, useLocation, useNavigate } from "react-router-dom";
 
 const PageTitle = ({ title }) => {
   const location = useLocation();
-
-  console.log(location);
+  const navigate = useNavigate();
 
   const showBackToHome =
-    location.pathname === "/" ? (
-      ""
-    ) : (
+    location.pathname === "/personal" ? (
       <NavLink
         to="/"
         className="font-bold text-sm cursor-pointer hover:opacity-75 active:opacity-40 underline hover:no-underline self-start"
       >
-        Back to Home
+        Back to Main Menu
       </NavLink>
+    ) : (
+      <button
+        onClick={() => navigate(-1)}
+        to="-1"
+        className="font-bold text-sm cursor-pointer hover:opacity-75 active:opacity-40 underline hover:no-underline self-start"
+      >
+        Go Back
+      </button>
     );
 
   return (

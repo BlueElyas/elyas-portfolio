@@ -1,48 +1,33 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import AppShell from "./components/shells/appshell";
 import Apis from "./pages/Apis";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import AlbumPage from "./pages/AlbumPage";
 import ExperimentShell from "./components/shells/ExperimentShell";
+import MainMenu from "./components/shells/MainMenu";
 
 function App() {
-  const router = createBrowserRouter([
-    {
-      path: "/",
-      element: <AppShell />,
-      children: [
-        {
-          path: "/",
-          element: <Home />,
-        },
-        {
-          path: "projects",
-          element: <Projects />,
-        },
-        {
-          path: "experiments",
-          element: <ExperimentShell />,
-          children: [
-            {
-              element: <Apis />,
-              index: true,
-            },
-            {
-              element: <Apis />,
-              path: "apis",
-            },
-            {
-              path: "albums",
-              element: <AlbumPage />,
-            },
-          ],
-        },
-      ],
-    },
-  ]);
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<MainMenu />}>
+          <Route
+            path="/cv.html"
+            element={<iframe src="/cv.html" title="CV" />}
+          />
+        </Route>
 
-  return <RouterProvider router={router} />;
+        <Route path="personal" element={<AppShell />}>
+          <Route index element={<Home />} />
+          <Route path="projects" element={<Projects />} />
+          <Route path="experiments" element={<ExperimentShell />} />
+          <Route path="experiments/apis" element={<Apis />} />
+          <Route path="experiments/albums" element={<AlbumPage />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
 export default App;

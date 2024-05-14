@@ -11,18 +11,15 @@ const Home = () => {
           title="Visit my Projects"
           description="Projects and Client work"
           name="projects"
-          startOrEnd="right"
         />
         <VisitPage
           title="Check out my use of APIs!"
           name="experiments/apis"
-          startOrEnd="left"
           description="Info and links of each API used are included."
         />
         <VisitPage
           title="Check out some albums I listen to"
           name="experiments/albums"
-          startOrEnd="right"
           description="Just some albums I listen to!"
         />
       </main>

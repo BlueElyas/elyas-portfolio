@@ -10,7 +10,7 @@ const Header = () => {
     <>
       <header className="flex justify-around py-10 items-center bg-softGray md:items-baseline">
         <h1 className="font-merriweatherBold text-4xl">
-          <NavLink to="/">Elyas F</NavLink>
+          <NavLink to="/personal">Elyas F</NavLink>
         </h1>
         <div className="md:hidden">
           <HamburgerMenu isActive={showNav} setIsActive={setShowNav} />
