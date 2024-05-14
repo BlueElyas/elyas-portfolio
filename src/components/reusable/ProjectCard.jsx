@@ -1,6 +1,24 @@
 import React from "react";
 
 const ProjectCard = ({ name, tools, description, website, github }) => {
+  const hideWebsite =
+    website.length === 0 ? (
+      ""
+    ) : (
+      <a href={website} target="_blank" rel="noreferrer">
+        Website
+      </a>
+    );
+
+  const hideGithub =
+    website.lenght === 0 ? (
+      ""
+    ) : (
+      <a href={github} target="_blank" rel="noreferrer">
+        Github
+      </a>
+    );
+
   return (
     <div className=" w-[90%] lg:w-[400px] rounded-lg m-1 overflow-hidden cursor-pointer shadow-2xl ">
       {/* <img src={img} alt={name} className="w-full object-cover" /> */}
@@ -19,14 +37,10 @@ const ProjectCard = ({ name, tools, description, website, github }) => {
           <span className="font-merriweatherReg block mb-2">{description}</span>
         </li>
         <li className="text-accent hover:opacity-70 underline hover:no-underline ">
-          <a href={website} target="_blank" rel="noreferrer">
-            Website
-          </a>
+          {hideWebsite}
         </li>
         <li className="text-accent hover:opacity-70 underline hover:no-underline ">
-          <a href={github} target="_blank" rel="noreferrer">
-            Github
-          </a>
+          {hideGithub}
         </li>
       </ul>
     </div>
