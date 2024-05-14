@@ -11,7 +11,7 @@ const ProjectCard = ({ name, tools, description, website, github }) => {
     );
 
   const hideGithub =
-    website.lenght === 0 ? (
+    github.length === 0 ? (
       ""
     ) : (
       <a href={github} target="_blank" rel="noreferrer">
