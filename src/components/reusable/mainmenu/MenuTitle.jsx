@@ -5,9 +5,13 @@ const MenuTitle = () => {
     <div class="flex justify-center items-center w-screen  p-5">
       <div class="border border-gray-200 p-2 rounded-md shadow-lg shadow-orange-300">
         <div class="flex items-end gap-1">
-          <span class="text-6xl font-semibold dark:text-white">Hello</span>
+          <span class="text-4xl lg:text-6xl font-semibold dark:text-white">
+            Hello
+          </span>
           <br />
-          <span class="text-6xl font-semibold text-orange-500">W</span>
+          <span class="text-4xl lg:text-6xl font-semibold text-orange-500">
+            W
+          </span>
           <svg
             class="animate-bounce"
             fill="#F97316"
@@ -22,7 +26,9 @@ const MenuTitle = () => {
               transform="translate(-41 -25)"
             />
           </svg>
-          <span class="text-6xl font-semibold text-orange-500">rld</span>
+          <span class="text-4xl lg:text-6xl font-semibold text-orange-500">
+            rld
+          </span>
         </div>
       </div>
     </div>

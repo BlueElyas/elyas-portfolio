@@ -5,7 +5,7 @@ import MenuTitle from "../reusable/mainmenu/MenuTitle";
 
 const MainMenu = () => {
   return (
-    <div className="flex justify-center items-center flex-col bg-darkGray text-softGray h-screen gap-8 text-4xl font-merriweatherBold text-center overflow-hidden">
+    <div className="flex justify-center items-center flex-col bg-darkGray text-softGray h-screen gap-8 text-lg lg:text-4xl font-merriweatherBold text-center overflow-hidden">
       <MenuTitle />
       <p className="text-lg font-sans mx-8 w-96">
         My name is{" "}
@@ -16,7 +16,7 @@ const MainMenu = () => {
       <MainMenuButton name="Personal Website" link="personal" />
 
       <a
-        className="text-lg font-sans w-96 text-softGray font-bold underline hover:no-underline hover:opacity-75 active:opacity-40"
+        className="text-sm font-sans w-96 text-softGray font-bold underline hover:no-underline hover:opacity-75 active:opacity-40 lg:text-lg"
         href="https://github.com/BlueElyas/elyas-portfolio"
       >
         Visit the code for my personal website here
