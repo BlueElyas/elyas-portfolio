@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 const VisitCard = ({ title, link, description }) => {
   return (
-    <div className="p-10 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 flex flex-col items-start gap-4">
+    <div className="p-10 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 flex flex-col items-start gap-4 mx-4">
       <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
         {title}
       </h5>
