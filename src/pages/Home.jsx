@@ -13,14 +13,9 @@ const Home = () => {
           name="projects"
         />
         <VisitPage
-          title="Check out my use of APIs!"
-          name="experiments/apis"
-          description="Info and links of each API used are included."
-        />
-        <VisitPage
-          title="Check out some albums I listen to"
-          name="experiments/albums"
-          description="Just some albums I listen to!"
+          title="Check out my experiments"
+          name="experiments"
+          description="API usage and some of my favorite albums!"
         />
       </main>
     </>
