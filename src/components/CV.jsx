@@ -27,7 +27,7 @@ const CV = () => {
             <div className="flex justify-center mb-16">
               <img
                 src="cvassets/image/elyas.jpg"
-                alt="Image"
+                alt="headshot of elyas"
                 className="rounded-2xl"
               />
             </div>
@@ -155,7 +155,13 @@ const CV = () => {
                     according to client preference.
                   </p>
                   <br />
-                  <a href="#">Please contact me to get a live demo</a>
+                  <a
+                    href="https://www.linkedin.com/in/elyas-f-57b022232/#"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Please contact me to get a live demo
+                  </a>
                 </div>
               </div>
 

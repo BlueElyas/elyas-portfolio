@@ -1,6 +1,4 @@
 import React from "react";
-
-import MainMenuButton from "../reusable/mainmenu/MainMenuButton";
 import WebsiteLoading from "./WebsiteLoading";
 import MenuLoading from "../reusable/mainmenu/MenuLoading";
 import { useAnimation } from "../../context/AnimationContext";
