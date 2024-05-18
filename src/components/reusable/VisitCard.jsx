@@ -1,12 +1,14 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-const VisitCard = ({ title, link, description }) => {
+const VisitCard = ({ title, link, description, images }) => {
   return (
-    <div className="p-10 border rounded-lg shadow bg-gray-800 border-gray-700 flex flex-col md:items-start gap-4 items-center flex-1 min-w-min">
-      <h5 className="mb-2 text-2xl font-bold tracking- text-white">{title}</h5>
+    <div className="p-10 border rounded-lg shadow bg-gray-800 border-gray-700 flex flex-col md:items-start gap-4 flex-1 min-w-min md:text-start">
+      <img src={images[0]} alt={title} />
 
-      <p className="mb-3 font-normal text-gray-400">{description}</p>
+      <h5 className="mb-2 text-2xl font-bold text-white">{title}</h5>
+
+      <p className="mb-3 font-normal text-gray-400 ">{description}</p>
       <NavLink
         to={link}
         className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white  rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none  bg-blue-600 "
@@ -21,9 +23,9 @@ const VisitCard = ({ title, link, description }) => {
         >
           <path
             stroke="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
             d="M1 5h12m0 0L9 1m4 4L9 9"
           />
         </svg>

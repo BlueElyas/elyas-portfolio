@@ -1,15 +1,23 @@
 import React from "react";
 import { NavLink, useLocation, useNavigate } from "react-router-dom";
+import { useAnimation } from "../../context/AnimationContext";
 
 const PageTitle = ({ title }) => {
   const location = useLocation();
   const navigate = useNavigate();
+  const { setShowLoading, setShowTitle } = useAnimation();
+
+  const handleClick = () => {
+    setShowLoading(false);
+    setShowTitle(false);
+  };
 
   const showBackToHome =
     location.pathname === "/portfolio" ? (
       <NavLink
         to="/"
         className="font-bold text-sm cursor-pointer hover:opacity-75 active:opacity-40 underline hover:no-underline self-start"
+        onClick={handleClick}
       >
         Back to Main Menu
       </NavLink>

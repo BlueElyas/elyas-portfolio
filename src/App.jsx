@@ -4,25 +4,25 @@ import Apis from "./pages/Apis";
 import Projects from "./pages/Projects";
 import AlbumPage from "./pages/Aboiut";
 import MainMenu from "./components/shells/MainMenu";
+import AnimationContextProvider from "./context/AnimationContext";
+import CV from "./components/CV";
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<MainMenu />}>
-          <Route
-            path="/cv.html"
-            element={<iframe src="/cv.html" title="CV" />}
-          />
-        </Route>
-
-        <Route path="portfolio" element={<AppShell />}>
-          <Route index element={<Projects />} />
-          <Route path="apis" element={<Apis />} />
-          <Route path="about" element={<AlbumPage />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
+    <AnimationContextProvider>
+      {" "}
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<MainMenu />} />
+          <Route path="cv" element={<CV />} />
+          <Route path="portfolio" element={<AppShell />}>
+            <Route index element={<Projects />} />
+            <Route path="apis" element={<Apis />} />
+            <Route path="about" element={<AlbumPage />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
+    </AnimationContextProvider>
   );
 }
 

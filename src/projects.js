@@ -5,6 +5,7 @@ const projects = [
     github: "",
     website: "",
     description: "Client project to develop a Jewellery eCommerce website.",
+    images: ["assets/image/audiophile/audiophile-home.png"],
   },
   {
     name: "Audiophile Website",
@@ -21,6 +22,7 @@ const projects = [
     description: "eCommerce website for speakers, headphones and earphones.",
     website: "https://splendorous-kheer-e419cf.netlify.app/",
     github: "https://github.com/BlueElyas/audiophile-website",
+    images: ["assets/image/audiophile/audiophile-home.png"],
   },
   {
     name: "Dreamlands",
@@ -29,6 +31,7 @@ const projects = [
       "Responsive website developed in a team. Includes animation effects and functional javascript.",
     website: "https://technative-academy.github.io/Dream-Generator/",
     github: "https://github.com/BlueElyas/Dream-Generator",
+    images: ["assets/image/audiophile/audiophile-home.png"],
   },
   {
     name: "Country Search using RESTful API",
@@ -45,6 +48,7 @@ const projects = [
     website: "https://loquacious-pithivier-fa024f.netlify.app/",
     description:
       "Country search and filter with country card displaying full data when clicked.",
+    images: ["assets/image/audiophile/audiophile-home.png"],
   },
 ];
 

@@ -24,6 +24,8 @@ const Projects = () => {
                 title={project.name}
                 description={project.description}
                 link={project.website}
+                images={project.images}
+                key={project.name}
               />
             );
           })}

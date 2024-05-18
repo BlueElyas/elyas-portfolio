@@ -1,20 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
 
 import MainMenuButton from "../reusable/mainmenu/MainMenuButton";
 import WebsiteLoading from "./WebsiteLoading";
 import MenuLoading from "../reusable/mainmenu/MenuLoading";
+import { useAnimation } from "../../context/AnimationContext";
 
 const MainMenu = () => {
-  const [showTitle, setShowTitle] = useState(true);
-  const [showLoading, setShowLoading] = useState(true);
-
-  setTimeout(() => {
-    setShowTitle(false);
-  }, 4000);
-
-  setTimeout(() => {
-    setShowLoading(false);
-  }, 5000);
+  const { showTitle, showLoading } = useAnimation();
 
   return (
     <>
@@ -23,7 +15,7 @@ const MainMenu = () => {
       ) : showLoading ? (
         <MenuLoading />
       ) : (
-        <div className="flex justify-center items-center flex-col bg-darkGray text-softGray h-screen gap-8 text-lg lg:text-4xl font-merriweatherBold text-center overflow-hidden">
+        <div className="flex justify-center items-center flex-col bg-darkGray text-softGray h-screen gap-8 text-lg lg:text-4xl font-merriweatherBold overflow-hidden">
           <p className="text-lg font-sans mx-8 w-[80%]">
             <p class="font-normal text-md md:text-xl">
               Front-End Developer skilled in HTML/CSS, JavaScript, React, and
@@ -36,7 +28,7 @@ const MainMenu = () => {
             </p>
           </p>
           <div className="flex flex-col gap-8">
-            <MainMenuButton name="View CV" link="cv.html" />
+            <MainMenuButton name="View CV" link="cv" />
             <MainMenuButton name="View Portfolio" link="portfolio" />
           </div>
 
