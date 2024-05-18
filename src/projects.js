@@ -4,8 +4,7 @@ const projects = [
     tools: ["Shopify", "HTML", "CSS", "Figma"],
     github: "",
     website: "",
-    description:
-      "Client project to develop a Jewellery eCommerce website. Lead a team to develop the website, products, marketing, sales, design, and analsysis for client.",
+    description: "Client project to develop a Jewellery eCommerce website.",
   },
   {
     name: "Audiophile Website",
@@ -19,8 +18,7 @@ const projects = [
       "Github",
       "Netlify",
     ],
-    description:
-      "Guru level Front-End Mentor challenge. Creating an eCommerce website for speakers, headphones and earphones.",
+    description: "eCommerce website for speakers, headphones and earphones.",
     website: "https://splendorous-kheer-e419cf.netlify.app/",
     github: "https://github.com/BlueElyas/audiophile-website",
   },
@@ -28,7 +26,7 @@ const projects = [
     name: "Dreamlands",
     tools: ["HTML", "CSS", "Javascript", "Git", "Github", "Font Awesome"],
     description:
-      "Group Project in TechNative Digital developing a responsive website selling dreams as service. Includes animation effects and functional javascript.",
+      "Responsive website developed in a team. Includes animation effects and functional javascript.",
     website: "https://technative-academy.github.io/Dream-Generator/",
     github: "https://github.com/BlueElyas/Dream-Generator",
   },
@@ -46,7 +44,7 @@ const projects = [
     github: "https://github.com/BlueElyas/country-search-restful-api",
     website: "https://loquacious-pithivier-fa024f.netlify.app/",
     description:
-      "React project creating a country search and filter with country card displaying full data when clicked. It is an advanced front-end mentor challenge.",
+      "Country search and filter with country card displaying full data when clicked.",
   },
 ];
 

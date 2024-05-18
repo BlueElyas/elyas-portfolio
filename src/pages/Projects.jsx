@@ -1,7 +1,7 @@
 import React from "react";
 import PageTitle from "../components/reusable/PageTitle";
 import projects from "../projects";
-import ProjectCard from "../components/reusable/ProjectCard";
+import VisitCard from "../components/reusable/VisitCard";
 
 const Projects = () => {
   return (
@@ -27,12 +27,10 @@ const Projects = () => {
         <div className="flex flex-col items-center md:flex-row md:flex-wrap justify-center mt-8 gap-24 md:items-baseline">
           {projects.map((project) => {
             return (
-              <ProjectCard
-                name={project.name}
-                tools={project.tools}
+              <VisitCard
+                title={project.name}
                 description={project.description}
-                website={project.website}
-                github={project.github}
+                link={project.website}
               />
             );
           })}
