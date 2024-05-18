@@ -4,6 +4,7 @@ import MainMenuButton from "../reusable/mainmenu/MainMenuButton";
 import WebsiteLoading from "./WebsiteLoading";
 import MenuLoading from "../reusable/mainmenu/MenuLoading";
 import { useAnimation } from "../../context/AnimationContext";
+import { NavLink } from "react-router-dom";
 
 const MainMenu = () => {
   const { showTitle, showLoading } = useAnimation();
@@ -15,23 +16,29 @@ const MainMenu = () => {
       ) : showLoading ? (
         <MenuLoading />
       ) : (
-        <div className="flex justify-center items-center flex-col bg-darkGray text-softGray h-screen gap-8 text-lg lg:text-4xl font-merriweatherBold overflow-hidden">
-          <p className="text-lg font-sans mx-8 w-[80%]">
-            <p class="font-normal text-md md:text-xl">
-              Front-End Developer skilled in HTML/CSS, JavaScript, React, and
-              TypeScript, with a focus on creating responsive and accessible web
-              applications.
-            </p>
-            <p>
-              Confidence in utilizing Typescript, HTML/CSS, and React to deliver
-              high-quality projects
-            </p>
-          </p>
-          <div className="flex flex-col gap-8">
-            <MainMenuButton name="View CV" link="cv" />
-            <MainMenuButton name="View Portfolio" link="portfolio" />
+        <div class="pt-52 mx-auto text-center">
+          <h1 class="text-6xl text-center font-4 font-bold text-accent mb-6">
+            Welcome
+          </h1>
+          <h2 class="text-xl font-4 font-semibold pb-11 text-gray-700 text-center p-5 md:mx-auto md:w-1/2">
+            I am a Front-End Developer skilled in HTML/CSS, JavaScript, React,
+            and TypeScript, with a focus on creating responsive and accessible
+            web applications.
+          </h2>
+          <div className="text-center mb-16 flex gap-5 justify-center">
+            <NavLink
+              className="inline-flex items-center py-3 font-semibold bg-black text-white px-7 hover:bg-white hover:text-black active:opacity-35  text-centerw-[200px] box-border text-lg"
+              to="cv"
+            >
+              View CV
+            </NavLink>
+            <NavLink
+              className="inline-flex items-center py-3 font-semibold bg-black text-white px-7 hover:bg-white hover:text-black active:opacity-35  text-centerw-[200px] box-border text-lg"
+              to="portfolio"
+            >
+              View Portfolio
+            </NavLink>
           </div>
-
           <a
             className="text-sm font-sans w-96 text-orange-500 font-bold underline hover:no-underline hover:opacity-75 active:opacity-40 lg:text-lg"
             href="https://github.com/BlueElyas/elyas-portfolio"
