@@ -19,8 +19,7 @@ function App() {
         </Route>
 
         <Route path="personal" element={<AppShell />}>
-          <Route index element={<Home />} />
-          <Route path="projects" element={<Projects />} />
+          <Route index element={<Projects />} />
           <Route path="experiments" element={<ExperimentShell />} />
           <Route path="experiments/apis" element={<Apis />} />
           <Route path="experiments/albums" element={<AlbumPage />} />

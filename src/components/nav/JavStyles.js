@@ -14,4 +14,5 @@ export const linkStyles = [
   "after:transition-all",
   "after:duration-300",
   "relative",
+  "md:text-2xl",
 ];

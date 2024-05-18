@@ -7,7 +7,7 @@ const Projects = () => {
   return (
     <div>
       <div className="text-center mx-5">
-        <PageTitle title="Projects" />
+        <PageTitle title="Portfolio" />
         <div className="leading-8">
           <p>
             Here are a variety of projects I have done. Under each will show the
