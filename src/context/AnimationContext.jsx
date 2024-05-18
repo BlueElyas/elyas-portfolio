@@ -8,11 +8,11 @@ const AnimationContextProvider = ({ children }) => {
 
   setTimeout(() => {
     setShowTitle(false);
-  }, 4000);
+  }, 3800);
 
   setTimeout(() => {
     setShowLoading(false);
-  }, 5000);
+  }, 4400);
 
   return (
     <AnimationContext.Provider

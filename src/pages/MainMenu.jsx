@@ -1,8 +1,8 @@
 import React from "react";
-import WebsiteLoading from "./WebsiteLoading";
-import MenuLoading from "../reusable/mainmenu/MenuLoading";
-import { useAnimation } from "../../context/AnimationContext";
+import MenuLoading from "../components/reusable/mainmenu/MenuLoading";
+import { useAnimation } from "../context/AnimationContext";
 import { NavLink } from "react-router-dom";
+import MenuTitle from "../components/reusable/mainmenu/MenuTitle";
 
 const MainMenu = () => {
   const { showTitle, showLoading } = useAnimation();
@@ -10,7 +10,7 @@ const MainMenu = () => {
   return (
     <>
       {showTitle ? (
-        <WebsiteLoading />
+        <MenuTitle />
       ) : showLoading ? (
         <MenuLoading />
       ) : (

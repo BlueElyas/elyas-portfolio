@@ -3,7 +3,7 @@ import AppShell from "./components/shells/appshell";
 import Apis from "./pages/Apis";
 import Projects from "./pages/Projects";
 import AlbumPage from "./pages/Aboiut";
-import MainMenu from "./components/shells/MainMenu";
+import MainMenu from "./pages/MainMenu";
 import AnimationContextProvider from "./context/AnimationContext";
 import CV from "./components/CV";
 
