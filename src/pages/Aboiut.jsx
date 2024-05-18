@@ -5,10 +5,10 @@ import AlbumCard from "../components/reusable/AlbumCard";
 
 const AlbumPage = () => {
   return (
-    <main className="flex flex-col ">
+    <main className=" w-[80%] mx-auto">
       <PageTitle title="My interests and links" />
 
-      <div className="flex flex-wrap items-center justify-center gap-24">
+      <div className="flex flex-wrap items-center justify-center gap-16">
         {albums.map((data) => {
           return (
             <AlbumCard

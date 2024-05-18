@@ -5,20 +5,13 @@ import VisitCard from "../components/reusable/VisitCard";
 
 const Projects = () => {
   return (
-    <div>
-      <div className="text-center mx-5">
+    <main>
+      <section className="text-center w-[80%] mx-auto">
         <PageTitle title="Portfolio" />
         <div className="leading-8">
-          <p>
-            Here are a variety of projects I have done. Under each will show the
-            tools I have used
-          </p>
-          <p>
-            Some projects are client, some are portfolio and some are for fun!{" "}
-          </p>
           <a
             href="https://github.com/BlueElyas"
-            className="underline hover:no-underline hover:opacity-75 active:opacity-30"
+            className="underline hover:no-underline hover:opacity-75 text-xl active:opacity-30"
             target="_noblank"
           >
             Visit my github here!
@@ -35,8 +28,8 @@ const Projects = () => {
             );
           })}
         </div>
-      </div>
-    </div>
+      </section>
+    </main>
   );
 };
 

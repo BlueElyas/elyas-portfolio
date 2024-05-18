@@ -5,7 +5,7 @@ import APIContainer from "../components/reusable/APIContainer";
 
 const Apis = () => {
   return (
-    <section>
+    <main className=" w-[80%] mx-auto">
       <PageTitle title="Using different APIs" />
       <APIContainer
         name="Official Jokes API"
@@ -15,7 +15,7 @@ const Apis = () => {
       >
         <Jokes />
       </APIContainer>
-    </section>
+    </main>
   );
 };
 
