@@ -12,8 +12,8 @@ const MainMenu = () => {
         <span class="text-xl font-semibold text-orange-500">Elyas</span>
         <p className="block my-4">Welcome to my page 👋 </p>
       </p>
-      <MainMenuButton name="Professional CV" link="cv.html" />
-      <MainMenuButton name="Personal Website" link="personal" />
+      <MainMenuButton name="View CV" link="cv.html" />
+      <MainMenuButton name="View Portfolio" link="personal" />
 
       <a
         className="text-sm font-sans w-96 text-softGray font-bold underline hover:no-underline hover:opacity-75 active:opacity-40 lg:text-lg"
