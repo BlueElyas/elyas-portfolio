@@ -6,7 +6,7 @@ const PageTitle = ({ title }) => {
   const navigate = useNavigate();
 
   const showBackToHome =
-    location.pathname === "/personal" ? (
+    location.pathname === "/portfolio" ? (
       <NavLink
         to="/"
         className="font-bold text-sm cursor-pointer hover:opacity-75 active:opacity-40 underline hover:no-underline self-start"
