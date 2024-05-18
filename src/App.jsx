@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import AppShell from "./components/shells/appshell";
 import Apis from "./pages/Apis";
 import Projects from "./pages/Projects";
-import AlbumPage from "./pages/AlbumPage";
+import AlbumPage from "./pages/Aboiut";
 import MainMenu from "./components/shells/MainMenu";
 
 function App() {
@@ -16,10 +16,10 @@ function App() {
           />
         </Route>
 
-        <Route path="personal" element={<AppShell />}>
+        <Route path="portfolio" element={<AppShell />}>
           <Route index element={<Projects />} />
           <Route path="apis" element={<Apis />} />
-          <Route path="albums" element={<AlbumPage />} />
+          <Route path="about" element={<AlbumPage />} />
         </Route>
       </Routes>
     </BrowserRouter>

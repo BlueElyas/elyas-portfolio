@@ -19,7 +19,7 @@ const MainMenu = () => {
         </p>
       </p>
       <MainMenuButton name="View CV" link="cv.html" />
-      <MainMenuButton name="View Portfolio" link="personal" />
+      <MainMenuButton name="View Portfolio" link="portfolio" />
 
       <a
         className="text-sm font-sans w-96 text-softGray font-bold underline hover:no-underline hover:opacity-75 active:opacity-40 lg:text-lg"

@@ -10,7 +10,7 @@ const NavBar = ({ toggleNavbar, isActive }) => {
       <nav>
         <ul className="flex gap-1font-merriweatherReg flex-col place-items-center bg-softGray pb-16 md:pb-8 flex-wrap md:flex-row md:justify-around  w-screen border-solid border-2 border-darkGray border-opacity-10 rounded-b-full gap-4 md:border-none md:w-[600px]">
           <li className={linkStyles.join(" ")}>
-            <NavLink to="/personal" className="flex items-center gap-4">
+            <NavLink to="/portfolio" className="flex items-center gap-4">
               <div className="md:hidden">
                 <FaArrowAltCircleRight />
               </div>
@@ -18,7 +18,7 @@ const NavBar = ({ toggleNavbar, isActive }) => {
             </NavLink>
           </li>
           <li className={linkStyles.join(" ")}>
-            <NavLink to="/personal" className="flex items-center gap-4">
+            <NavLink to="apis" className="flex items-center gap-4">
               <div className="md:hidden">
                 <FaArrowAltCircleRight />
               </div>
@@ -28,7 +28,7 @@ const NavBar = ({ toggleNavbar, isActive }) => {
             </NavLink>
           </li>
           <li className={linkStyles.join(" ")}>
-            <NavLink to="/personal" className="flex items-center gap-4">
+            <NavLink to="about" className="flex items-center gap-4">
               <div className="md:hidden">
                 <FaArrowAltCircleRight />
               </div>
