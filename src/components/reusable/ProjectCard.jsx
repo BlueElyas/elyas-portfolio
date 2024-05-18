@@ -22,9 +22,14 @@ const ProjectCard = ({ name, tools, description, website, github }) => {
   return (
     <div className=" w-[90%] lg:w-[400px] rounded-lg m-1 overflow-hidden cursor-pointer shadow-2xl ">
       {/* <img src={img} alt={name} className="w-full object-cover" /> */}
-      <ul className="flex flex-col gap-6 font-merriweatherBold my-4 leading-8 justify-center px-10 leading-">
+      <ul className="flex flex-col gap-6 font-merriweatherBold my-4 leading-8 justify-center p-10 leading-">
         <li>
-          Name: <span className="font-merriweatherReg block mb-2">{name}</span>
+          <span className="font-merriweatherReg block mb-2 text-2xl">
+            {name}
+          </span>
+        </li>
+        <li>
+          <span className="font-merriweatherReg block mb-2">{description}</span>
         </li>
         <li>
           Tools:
@@ -32,16 +37,7 @@ const ProjectCard = ({ name, tools, description, website, github }) => {
             {tools.join(", ")}
           </span>
         </li>
-        <li>
-          Desc:
-          <span className="font-merriweatherReg block mb-2">{description}</span>
-        </li>
-        <li className="text-accent hover:opacity-70 underline hover:no-underline ">
-          {hideWebsite}
-        </li>
-        <li className="text-accent hover:opacity-70 underline hover:no-underline ">
-          {hideGithub}
-        </li>
+        <button>View More</button>
       </ul>
     </div>
   );
