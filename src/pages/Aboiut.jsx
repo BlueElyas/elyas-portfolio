@@ -6,7 +6,7 @@ import AlbumCard from "../components/reusable/AlbumCard";
 const AlbumPage = () => {
   return (
     <main className="flex flex-col ">
-      <PageTitle title="Random albums that I have listened to" />
+      <PageTitle title="My interests and links" />
 
       <div className="flex flex-wrap items-center justify-center gap-24">
         {albums.map((data) => {
