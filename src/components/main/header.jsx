@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import HamburgerMenu from "../nav/HamburgerMenu";
 import NavBar from "../nav/Nav";
-import { NavLink } from "react-router-dom";
 
 const Header = () => {
   const [showNav, setShowNav] = useState(false);
