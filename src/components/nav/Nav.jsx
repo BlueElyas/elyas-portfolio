@@ -1,5 +1,4 @@
 import React from "react";
-import { FaArrowAltCircleRight } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 
 import { linkStyles } from "./JavStyles";

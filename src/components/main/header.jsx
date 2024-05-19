@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import HamburgerMenu from "../nav/HamburgerMenu";
 import NavBar from "../nav/Nav";
 
 const Header = () => {
