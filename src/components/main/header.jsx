@@ -7,19 +7,9 @@ const Header = () => {
 
   return (
     <>
-      <header className="flex justify-end pr-7 py-10 items-center bg-softGray md:items-baseline md:justify-center">
-        <div className="md:hidden">
-          <HamburgerMenu isActive={showNav} setIsActive={setShowNav} />
-        </div>
-        <div className="hidden md:block">
-          <NavBar toggleNavbar={setShowNav} isActive={showNav} />
-        </div>
+      <header className="flex justify-center pr-7 pt-5 items-center bg-softGray md:items-baseline md:justify-center">
+        <NavBar toggleNavbar={setShowNav} isActive={showNav} />
       </header>
-      {showNav && (
-        <div className="md:hidden">
-          <NavBar toggleNavbar={setShowNav} isActive={showNav} />
-        </div>
-      )}
     </>
   );
 };
