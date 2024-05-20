@@ -8,7 +8,7 @@ const VisitCard = ({ project }) => {
   return (
     <div className="p-10 border rounded-lg shadow bg-gray-800 border-gray-700 flex flex-col gap-8 md:text-start md:flex-row-reverse md:gap-12 md:w-[600px] md:h-[450px] md:justify-between">
       <div className="md:w-1/3">
-        <div src={images[0]} alt={name} className="w-full" />
+        <img src={images[0]} alt={name} className="w-full" />
       </div>
       <hr className="hidden md:block border-[1px] border-solid border-opacity-30 border-white h-full " />
 

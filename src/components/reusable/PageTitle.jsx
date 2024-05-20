@@ -13,7 +13,7 @@ const PageTitle = ({ title }) => {
   };
 
   const showBackToHome =
-    location.pathname === "/portfolio" ? (
+    location.pathname === "/home/portfolio" ? (
       <NavLink
         to="/"
         className="font-bold text-sm cursor-pointer hover:opacity-75 active:opacity-40 underline hover:no-underline self-start"

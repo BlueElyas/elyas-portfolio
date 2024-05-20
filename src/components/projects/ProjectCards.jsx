@@ -1,33 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { fetchPortfolioDetails } from "../../utility/fetchPortfolioDetails";
-import "react-slideshow-image/dist/styles.css";
-import { Slide } from "react-slideshow-image";
+import ProjectCardSlideShow from "./ProjectCardSlideShow";
+import ProjectCardInfo from "./ProjectCardInfo";
 
 const ProjectCards = () => {
   const { slug } = useParams();
   const navigate = useNavigate();
-  const item = fetchPortfolioDetails(slug);
-
-  console.log(item);
+  const [item, setItem] = useState(fetchPortfolioDetails(slug));
 
   return (
-    <div className="flex flex-col items-center">
-      <button onClick={() => navigate(-1)}>Go Back</button>
-      <div className=" ">
-        <Slide>
-          {item.images.map((image, index) => {
-            console.log(image);
-            return (
-              <div
-                className="flex h-[800px] w-[650px] justify-center bg-cover items-center"
-                style={{ backgroundImage: image }}
-                key={index}
-              ></div>
-            );
-          })}
-        </Slide>
-      </div>
+    <div className="flex flex-col items-center w-[80%] mx-auto py-16">
+      <button
+        className="underline font-merriweatherBold self-start"
+        onClick={() => navigate(-1)}
+      >
+        Go Back
+      </button>
+      <ProjectCardInfo data={item} />
+      <ProjectCardSlideShow images={item.images} />
     </div>
   );
 };

@@ -6,7 +6,7 @@ const projects = [
     website: "",
     description: "Client project to develop a Jewellery eCommerce website.",
     images: [
-      "public/assets/image/sayagems/saya-home.png",
+      "/assets/image/sayagems/saya-home.png",
       "/assets/image/sayagems/saya-about.png",
       "/assets/image/sayagems/saya-custom.png",
       "/assets/image/sayagems/saya-checkout.png",
