@@ -10,7 +10,7 @@ const ProjectCards = () => {
   const item = fetchPortfolioDetails(slug);
 
   return (
-    <div className="flex flex-col items-center w-[80%] mx-auto py-16">
+    <div className="flex flex-col items-center w-[80%] mx-auto py-4">
       <div className="self-stretch">
         <PageTitle title={item.name} />
       </div>
