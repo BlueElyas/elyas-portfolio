@@ -5,7 +5,16 @@ const projects = [
     github: "",
     website: "",
     description: "Client project to develop a Jewellery eCommerce website.",
-    images: ["assets/image/audiophile/audiophile-home.png"],
+    images: [
+      "public/assets/image/sayagems/saya-home.png",
+      "/assets/image/sayagems/saya-about.png",
+      "/assets/image/sayagems/saya-custom.png",
+      "/assets/image/sayagems/saya-checkout.png",
+      "/assets/image/sayagems/saya-products.png",
+      "/assets/image/sayagems/saya-mobile-home.png",
+      "/assets/image/sayagems/saya-mobile-about.png",
+    ],
+    slug: "saya",
   },
   {
     name: "Audiophile Website",
@@ -22,7 +31,16 @@ const projects = [
     description: "eCommerce website for speakers, headphones and earphones.",
     website: "https://splendorous-kheer-e419cf.netlify.app/",
     github: "https://github.com/BlueElyas/audiophile-website",
-    images: ["assets/image/audiophile/audiophile-home.png"],
+    images: [
+      "/assets/image/audiophile/audiophile-home.png",
+      "/assets/image/audiophile/audiophile-headphones.png",
+      "/assets/image/audiophile/audiophile-cart.png",
+      "/assets/image/audiophile/audiophile-checkout.png",
+      "/assets/image/audiophile/audiophile-oneheadphone.png",
+      "/assets/image/audiophile/audiophile-mobile-checkout.png",
+      "/assets/image/audiophile/audiophile-mobile-home.png",
+    ],
+    slug: "audiophile",
   },
   {
     name: "Dreamlands",
@@ -31,7 +49,14 @@ const projects = [
       "Responsive website developed in a team. Includes animation effects and functional javascript.",
     website: "https://technative-academy.github.io/Dream-Generator/",
     github: "https://github.com/BlueElyas/Dream-Generator",
-    images: ["assets/image/audiophile/audiophile-home.png"],
+    images: [
+      "/assets/image/dreamland/dreamland-home.png",
+      "/assets/image/dreamland/dreamland-about.png",
+      "/assets/image/dreamland/dreamland-products.png",
+      "/assets/image/dreamland/dreamland-mobile-home.png",
+      "/assets/image/dreamland/dreamland-mobile-about.png",
+    ],
+    slug: "dreamlands",
   },
   {
     name: "Country Search using RESTful API",
@@ -48,7 +73,14 @@ const projects = [
     website: "https://loquacious-pithivier-fa024f.netlify.app/",
     description:
       "Country search and filter with country card displaying full data when clicked.",
-    images: ["assets/image/audiophile/audiophile-home.png"],
+    images: [
+      "/assets/image/country-api/country-lightmode.png",
+      "/assets/image/country-api/country-darkmode.png",
+      "/assets/image/country-api/country-card.png",
+      "/assets/image/country-api/country-mobile.png",
+      "/assets/image/country-api/country-mobile-card.png",
+    ],
+    slug: "country",
   },
 ];
 

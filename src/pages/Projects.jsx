@@ -2,8 +2,15 @@ import React from "react";
 import PageTitle from "../components/reusable/PageTitle";
 import projects from "../projects";
 import VisitCard from "../components/reusable/VisitCard";
+import { Outlet, useLocation } from "react-router-dom";
 
 const Projects = () => {
+  const location = useLocation();
+
+  if (location.pathname !== "/home/portfolio") {
+    return <Outlet />;
+  }
+
   return (
     <main>
       <section className="text-center w-[80%] mx-auto">
@@ -19,15 +26,7 @@ const Projects = () => {
         </div>
         <div className="flex flex-col items-center md:flex-row md:flex-wrap mt-8 gap-24 md:items-baseline justify-center">
           {projects.map((project) => {
-            return (
-              <VisitCard
-                title={project.name}
-                description={project.description}
-                link={project.website}
-                images={project.images}
-                key={project.name}
-              />
-            );
+            return <VisitCard project={project} key={project.slug} />;
           })}
         </div>
       </section>

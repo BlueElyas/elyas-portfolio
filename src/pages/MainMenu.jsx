@@ -32,7 +32,7 @@ const MainMenu = () => {
             </NavLink>
             <NavLink
               className="inline-flex items-center py-3 font-semibold bg-black text-white px-7 hover:bg-white hover:text-black active:opacity-35  text-centerw-[200px] box-border text-lg"
-              to="portfolio"
+              to="home/portfolio"
             >
               View Portfolio
             </NavLink>
