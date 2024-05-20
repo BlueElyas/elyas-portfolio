@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { fetchPortfolioDetails } from "../../utility/fetchPortfolioDetails";
 import ProjectCardSlideShow from "./ProjectCardSlideShow";
