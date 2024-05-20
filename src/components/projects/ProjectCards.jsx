@@ -1,5 +1,5 @@
 import React from "react";
-import { useNavigate, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { fetchPortfolioDetails } from "../../utility/fetchPortfolioDetails";
 import ProjectCardSlideShow from "./ProjectCardSlideShow";
 import ProjectCardInfo from "./ProjectCardInfo";
@@ -7,7 +7,6 @@ import PageTitle from "../reusable/PageTitle";
 
 const ProjectCards = () => {
   const { slug } = useParams();
-  const navigate = useNavigate();
   const item = fetchPortfolioDetails(slug);
 
   return (
