@@ -7,7 +7,7 @@ import ProjectCardInfo from "./ProjectCardInfo";
 const ProjectCards = () => {
   const { slug } = useParams();
   const navigate = useNavigate();
-  const [item, setItem] = useState(fetchPortfolioDetails(slug));
+  const item = fetchPortfolioDetails(slug);
 
   return (
     <div className="flex flex-col items-center w-[80%] mx-auto py-16">

@@ -3,7 +3,6 @@ import { NavLink } from "react-router-dom";
 
 const VisitCard = ({ project }) => {
   const { name, description, images, slug } = project;
-  console.log(images[0]);
 
   return (
     <div className="p-10 border rounded-lg shadow bg-gray-800 border-gray-700 flex flex-col gap-8 md:text-start md:flex-row-reverse md:gap-12 md:w-[600px] md:h-[450px] md:justify-between">
