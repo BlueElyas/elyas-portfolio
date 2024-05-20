@@ -11,7 +11,9 @@ const ProjectCards = () => {
 
   return (
     <div className="flex flex-col items-center w-[80%] mx-auto py-16">
-      <PageTitle title={item.name} />
+      <div className="self-stretch">
+        <PageTitle title={item.name} />
+      </div>
       <ProjectCardInfo data={item} />
       <ProjectCardSlideShow images={item.images} />
     </div>
