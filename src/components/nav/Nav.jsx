@@ -7,7 +7,7 @@ const NavBar = ({ toggleNavbar, isActive }) => {
   return (
     <>
       <nav>
-        <ul className="flex font-merriweatherReg place-items-center bg-softGray pb-6 md:pb-8 flex-wrap md:flex-row md:justify-around  gap-8 md:w-[600px]">
+        <ul className="flex font-merriweatherRegbg-softGray py-6 md:pb-8 justify-center md:flex-row md:justify-around  gap-8 md:w-[600px] ">
           <li className={linkStyles.join(" ")}>
             <NavLink to="/home/portfolio" className="flex items-center gap-4">
               <button onClick={() => toggleNavbar(!isActive)}>Portfolio</button>

@@ -6,7 +6,7 @@ const Header = () => {
 
   return (
     <>
-      <header className="flex justify-center pr-7 pt-5 items-center bg-softGray md:items-baseline md:justify-center">
+      <header className="flex justify-center md:pr-7 md:pt-5 items-center bg-softGray md:items-baseline md:justify-center">
         <NavBar toggleNavbar={setShowNav} isActive={showNav} />
       </header>
     </>
