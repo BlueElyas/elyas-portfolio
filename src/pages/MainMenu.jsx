@@ -14,11 +14,11 @@ const MainMenu = () => {
       ) : showLoading ? (
         <MenuLoading />
       ) : (
-        <div class="pt-52 mx-auto text-center">
-          <h1 class="text-6xl text-center font-4 font-bold text-accent mb-6">
+        <div className="pt-52 mx-auto text-center">
+          <h1 className="text-6xl text-center font-4 font-bold text-accent mb-6">
             Welcome
           </h1>
-          <h2 class="text-xl font-4 font-semibold pb-11 text-gray-700 text-center p-5 md:mx-auto md:w-1/2">
+          <h2 className="text-xl font-4 font-semibold pb-11 text-gray-700 text-center p-5 md:mx-auto md:w-1/2">
             I am a Front-End Developer skilled in HTML/CSS, JavaScript, React,
             and TypeScript, with a focus on creating responsive and accessible
             web applications.

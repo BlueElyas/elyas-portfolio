@@ -10,7 +10,6 @@ import CV from "./components/CV";
 function App() {
   return (
     <AnimationContextProvider>
-      {" "}
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<MainMenu />} />
