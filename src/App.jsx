@@ -1,8 +1,6 @@
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import AppShell from "./components/shells/appshell";
-import Apis from "./pages/Apis";
 import Projects from "./pages/Projects";
-import AlbumPage from "./pages/Aboiut";
 import MainMenu from "./pages/MainMenu";
 import AnimationContextProvider from "./context/AnimationContext";
 import CV from "./components/CV";
@@ -20,8 +18,6 @@ function App() {
             <Route path="portfolio" element={<Projects />}>
               <Route path=":slug" element={<ProjectCards />} />
             </Route>
-            <Route path="apis" element={<Apis />} />
-            <Route path="about" element={<AlbumPage />} />
           </Route>
         </Routes>
       </BrowserRouter>

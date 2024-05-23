@@ -4,7 +4,7 @@ const ProjectCardInfo = ({ data }) => {
   const { tools, name, github, website, description } = data;
 
   return (
-    <div className="bg-white max-w-2xl  overflow-hidden sm:rounded-lg my-8 shadow-2xl">
+    <div className="bg-white max-w-2xl  overflow-hidden sm:rounded-lg my-8 shadow-2xl border-2 border-solid">
       <div className="px-4 py-5 sm:px-6">
         <h3 className="text-lg leading-6 font-medium text-gray-900">{name}</h3>
       </div>

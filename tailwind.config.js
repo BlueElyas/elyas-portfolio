@@ -60,8 +60,10 @@ module.exports = {
           "url('assets/image/dreamland/dreamland-mobile-about.png')",
         "dreamland-mobile-home":
           "url('assets/image/dreamland/dreamland-mobile-home.png')",
+        "custom-gradient": "linear-gradient(0.25turn, #8900ff, #f50179)",
       },
     },
   },
+
   plugins: [],
 };

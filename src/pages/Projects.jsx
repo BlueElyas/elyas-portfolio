@@ -1,8 +1,8 @@
 import React from "react";
 import PageTitle from "../components/reusable/PageTitle";
 import projects from "../projects";
-import VisitCard from "../components/reusable/VisitCard";
 import { Outlet, useLocation } from "react-router-dom";
+import AlbumCard from "../components/reusable/AlbumCard";
 
 const Projects = () => {
   const location = useLocation();
@@ -24,9 +24,9 @@ const Projects = () => {
             Visit my github here!
           </a>
         </div>
-        <div className="flex flex-col items-center md:flex-row md:flex-wrap mt-8 gap-24 md:items-baseline justify-center">
+        <div className="mt-8 grid place-items-center md:grid-cols-2 lg:grid-cols-3 items-start">
           {projects.map((project) => {
-            return <VisitCard project={project} key={project.slug} />;
+            return <AlbumCard project={project} key={project.slug} />;
           })}
         </div>
       </section>

@@ -18,17 +18,21 @@ const ProjectCardSlideShow = ({ images }) => {
     <div className="w-full flex flex-col items-center">
       <Slider
         {...settings}
-        className="w-full max-w-lg h-96 flex items-center shadow-2xl relative overflow-hidden cursor-pointer"
+        className="w-full max-w-lg max-h-96 flex items-center shadow-2xl relative overflow-hidden cursor-pointer"
       >
         {images.map((image, index) => {
           console.log(image);
           return (
-            <div key={index} className="w-full h-full object-cover">
+            <div key={index} className="w-full object-cover">
               <img src={image} alt={image} />
             </div>
           );
         })}
       </Slider>
+      <h1 className="mt-14 w-1/2 text-center">
+        There are no arrows or dots because its hidden! Please use your mouse or
+        finger to drag the images along.
+      </h1>
     </div>
   );
 };
