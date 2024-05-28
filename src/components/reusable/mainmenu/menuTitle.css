@@ -20,7 +20,7 @@
   }
 }
 .animated-title {
-  color: #222;
+  color: #fff;
   font-family: Roboto, Arial, sans-serif;
   height: 90vmin;
   left: 50%;
@@ -55,7 +55,7 @@
   transform: translate(0, 100%);
 }
 .animated-title > div.text-top div span:first-child {
-  color: #767676;
+  color: #fff;
 }
 .animated-title > div.text-bottom {
   bottom: 0;
