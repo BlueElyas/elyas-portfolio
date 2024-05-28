@@ -8,7 +8,7 @@ const AnimationContextProvider = ({ children }) => {
 
   setTimeout(() => {
     setShowTitle(false);
-  }, 3800);
+  }, 3400);
 
   setTimeout(() => {
     setShowLoading(false);
