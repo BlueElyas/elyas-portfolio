@@ -44,7 +44,7 @@
   display: block;
 }
 .animated-title > div.text-top {
-  border-bottom: 1vmin solid #000;
+  border-bottom: 1vmin solid #ABABAB;
   top: 0;
 }
 .animated-title > div.text-top div {
