@@ -1,5 +1,4 @@
 import React from "react";
-import MenuLoading from "../components/reusable/mainmenu/MenuLoading";
 import { useAnimation } from "../context/AnimationContext";
 import { NavLink } from "react-router-dom";
 import MenuTitle from "../components/reusable/mainmenu/MenuTitle";
