@@ -1,19 +1,20 @@
 import React from "react";
-import MenuLoading from "../components/reusable/mainmenu/MenuLoading";
 import { useAnimation } from "../context/AnimationContext";
 import { NavLink } from "react-router-dom";
 import MenuTitle from "../components/reusable/mainmenu/MenuTitle";
 import styles from "./mainmenu.module.css";
 
 const MainMenu = () => {
-  const { showTitle, showLoading } = useAnimation();
+  const { showTitle } = useAnimation();
 
   return (
     <>
       {showTitle ? (
+         <div
+          className={`bg-custom-gradient animate-gradient-x h-screen text-white ${styles.wrapper} [text-shadow:_0_1px_0_rgb(0_0_0_/_40%)]`}
+        >
         <MenuTitle />
-      ) : showLoading ? (
-        <MenuLoading />
+           </div>
       ) : (
         <div
           className={`bg-custom-gradient animate-gradient-x h-screen text-white ${styles.wrapper} [text-shadow:_0_1px_0_rgb(0_0_0_/_40%)]`}
