@@ -5,7 +5,7 @@ const AlbumCard = ({ project }) => {
   const { name, description, images, slug } = project;
   return (
     <NavLink to={slug}>
-      <div className=" w-[90%] lg:w-80 rounded-lg m-1 overflow-hidden cursor-pointer shadow-xl transition-all ease-linear transition-200ms hover:scale-105 hover:shadow-2xl p-4 bg-white text-darkGray text-start ">
+      <div className=" lg:w-80 rounded-lg m-1 overflow-hidden cursor-pointer shadow-xl transition-all ease-linear transition-200ms hover:shadow-2xl p-4 bg-white text-darkGray text-start ">
         <img src={images[0]} alt={name} className="w-full object-cover " />
         <ul className="  my-4 leading-7 flex flex-col gap-4">
           <li className="font-merriweatherBold">{name}</li>

@@ -24,7 +24,7 @@ const Projects = () => {
             Visit my github here!
           </a>
         </div>
-        <div className="mt-8 grid place-items-center md:grid-cols-2 lg:grid-cols-3 items-start">
+        <div className="mt-8 grid gap-16 md:gap-32 md:grid-cols-2 lg:grid-cols-3 items-start">
           {projects.map((project) => {
             return <AlbumCard project={project} key={project.slug} />;
           })}
